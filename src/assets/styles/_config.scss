@@ -1,0 +1,38 @@
+
+// variables
+$blue-primary: #3f51b5;
+$black: #363636;
+$light-gray: #f5f5f5;
+$gray: #eaeaea;
+$white: #ffffff;
+$light-black: rgba(0,0,0,.54);
+
+$header-height: 60px;
+
+//breakpoints
+$bp-mobile-max: 767px;
+$bp-tablet-min: 768px;
+$bp-tablet-max: 1023px;
+$bp-desktop-min: 1024px;
+
+$max-screen-width: 1920px;
+
+$box-shadow-g: 0px 0px 2px rgba(0, 0, 0, 0.6);
+
+
+// mixins
+@mixin flex($justify-content, $align-item) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-item;
+}
+
+@mixin borderSolid($color){
+    border: 2px solid $color;
+}
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}

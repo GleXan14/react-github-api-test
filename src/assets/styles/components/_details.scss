@@ -1,0 +1,42 @@
+
+.details-container{
+    margin-top: $header-height + 20px;
+    margin-bottom: 30px;
+    @include flex(center, flex-start);
+    flex-direction: column;
+    background: $white;
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 20%);
+    padding: 10px 15px;
+
+    .details-title{
+        color: $blue-primary;
+    }
+
+    hr{
+        height: 2px;
+        width: 100%;
+        margin: 5px 0 20px;
+    }
+
+    .details{
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .detail{
+            flex-basis: 30%;
+            flex-grow: 1;
+            margin: 20px 0;
+
+            h4{
+                color: $blue-primary;
+                margin-bottom: 10px;
+            }
+
+            p{
+                color: #808080;
+            }
+        }
+    }
+}

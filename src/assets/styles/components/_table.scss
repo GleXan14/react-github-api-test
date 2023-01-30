@@ -1,0 +1,29 @@
+
+.table{
+    width: 100%;
+
+
+    .table-actions{
+        padding: 5px;
+        width: auto;
+        border-radius: 20px;
+        background-color: $blue-primary;
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        border: 2px solid $blue-primary;
+        transition: .3s;
+        border-radius: 20px;
+        cursor: pointer;
+        @include flex(center, center);
+
+        &:hover{
+            background-color: $white;
+            color: $blue-primary;
+        }
+
+        &-icon{
+            margin-left: 4px;
+        }
+    }
+}
